@@ -1,0 +1,19 @@
+.title-accordion {
+    -fx-text-fill: #282828;
+    -fx-background-color: #43B993;
+}
+.jfx-button {
+    -jfx-button-type: FLAT;
+    -fx-background-color: white;
+    -fx-text-fill: black
+}
+.jfx-button:hover {
+    -fx-background-color: #e8e8e8;
+}
+.panel-catedraticos {
+    -fx-background-color: #43B993;
+}
+.panel-alumnos {
+    -fx-background-color: #DFA62F;
+}
+
