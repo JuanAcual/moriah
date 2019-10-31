@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/vistas/Asignar_Mat_Grado.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/vistas/Habilitar_Seccion.fxml"));
         primaryStage.setTitle("Colegio Moriah");
         primaryStage.setScene(new Scene(root, 759, 750));
         primaryStage.setResizable(false);

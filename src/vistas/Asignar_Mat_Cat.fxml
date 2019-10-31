@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="759.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <Label layoutX="106.0" layoutY="60.0" text="Codigo Catedratico:" />
+      <Label layoutX="107.0" layoutY="115.0" text="Catedratico:" />
+      <Label layoutX="109.0" layoutY="169.0" text="Nivel:" />
+      <Label layoutX="109.0" layoutY="220.0" text="Grado:" />
+      <Label layoutX="109.0" layoutY="275.0" text="Curso:" />
+      <TextField layoutX="231.0" layoutY="56.0" prefHeight="25.0" prefWidth="265.0" />
+      <TextField layoutX="231.0" layoutY="103.0" prefHeight="25.0" prefWidth="422.0" />
+      <Button layoutX="519.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Buscar" />
+      <ComboBox layoutX="231.0" layoutY="165.0" prefHeight="25.0" prefWidth="265.0" promptText="Seleccione un nivel" />
+      <ComboBox layoutX="231.0" layoutY="216.0" prefHeight="25.0" prefWidth="265.0" promptText="Seleccione un grado" />
+      <ComboBox layoutX="231.0" layoutY="271.0" prefHeight="25.0" prefWidth="265.0" promptText="Seleccione un curso" />
+      <Button layoutX="519.0" layoutY="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Agregar" />
+      <TableView layoutX="106.0" layoutY="329.0" prefHeight="327.0" prefWidth="553.0">
+        <columns>
+          <TableColumn prefWidth="125.0" text="Codigo Materia" />
+          <TableColumn prefWidth="420.0" text="Nombre Materia" />
+        </columns>
+      </TableView>
+      <Button layoutX="127.0" layoutY="677.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Asignar Cursos" />
+      <Button layoutX="298.0" layoutY="677.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="171.0" text="Eliminar curso de la lista" />
+      <Button layoutX="524.0" layoutY="677.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Cancelar" />
+   </children>
+</AnchorPane>
