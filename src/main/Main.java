@@ -9,12 +9,13 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage stage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/vistas/home.fxml"));
-        primaryStage.setTitle("Colegio Moriah");
-        primaryStage.setScene(new Scene(root, 800, 600));
-        primaryStage.setResizable(false);
-        primaryStage.show();
+        
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        
+        stage.show();
     }
 
 

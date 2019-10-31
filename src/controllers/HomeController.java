@@ -1,25 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package controllers;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.layout.Pane;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 
-public class HomeController {
-    @FXML
-    private Pane panelCatedraticos, panelAlumnos;
+/**
+ * FXML Controller class
+ *
+ * @author Juan
+ */
+public class HomeController implements Initializable {
     
     @FXML
-    private Button buttonCatedraticos, buttonAlumnos;
+     private AnchorPane paneContenedor;
     
     @FXML
-    private void handleButtonCatedraticos(ActionEvent e) {
-        panelCatedraticos.toFront();
+    public void handleButtonCatedraticos(ActionEvent event) throws IOException {
+        AnchorPane paneCatedraticos = FXMLLoader.load(getClass().getResource("/vistas/catedraticos.fxml"));
+        paneContenedor.getChildren().setAll(paneCatedraticos);
     }
     
-    @FXML
-    private void handleButtonAlumnos(ActionEvent e) {
-        panelAlumnos.toFront();
-    }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
     
 }
