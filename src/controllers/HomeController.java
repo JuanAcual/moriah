@@ -25,11 +25,40 @@ public class HomeController implements Initializable {
      private AnchorPane paneContenedor;
     
     @FXML
-    public void handleButtonCatedraticos(ActionEvent event) throws IOException {
-        AnchorPane paneCatedraticos = FXMLLoader.load(getClass().getResource("/vistas/catedraticos.fxml"));
-        paneContenedor.getChildren().setAll(paneCatedraticos);
+    public void buttonCatedraticos(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/catedraticos.fxml"));
+        paneContenedor.getChildren().setAll(pane);
     }
     
+    @FXML
+    public void buttonAlumnos(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/Alumnos.fxml"));
+        paneContenedor.getChildren().setAll(pane);
+    }
+    
+    @FXML
+    public void buttonMaterias(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/Materias.fxml"));
+        paneContenedor.getChildren().setAll(pane);
+    }
+    
+    @FXML
+    public void buttonCrearGrado(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/Crear_Grado.fxml"));
+        paneContenedor.getChildren().setAll(pane);
+    }
+    
+    @FXML
+    public void buttonHabilitarSeccion(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/Habilitar_Seccion.fxml"));
+        paneContenedor.getChildren().setAll(pane);
+    }
+    
+    @FXML
+    public void buttonAsignarMateria(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/vistas/Asignar_Mat_Grado.fxml"));
+        paneContenedor.getChildren().setAll(pane);
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

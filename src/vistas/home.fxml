@@ -5,31 +5,42 @@
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="950.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.HomeController">
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
    <children>
       <AnchorPane prefHeight="750.0" prefWidth="200.0">
          <children>
             <Accordion layoutX="-1.0">
               <panes>
-                <TitledPane animated="false" text="untitled 1">
+                <TitledPane text="ADMINISTRATIVO">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#handleButtonCatedraticos" prefHeight="25.0" prefWidth="201.0" text="Catedraticos" />
-                              <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Button" />
+                              <Button mnemonicParsing="false" onAction="#buttonCatedraticos" prefHeight="25.0" prefWidth="201.0" text="Catedraticos" />
+                              <Button layoutY="25.0" mnemonicParsing="false" onAction="#buttonAlumnos" prefHeight="25.0" prefWidth="201.0" text="Alumnos" />
+                              <Button layoutY="50.0" mnemonicParsing="false" onAction="#buttonMaterias" prefHeight="25.0" prefWidth="201.0" text="Materias" />
+                              <Button layoutY="75.0" mnemonicParsing="false" onAction="#buttonCrearGrado" prefHeight="25.0" prefWidth="201.0" text="Crear Grado" />
+                              <Button layoutY="100.0" mnemonicParsing="false" onAction="#buttonHabilitarSeccion" prefHeight="25.0" prefWidth="201.0" text="Habilitar Seccion" />
+                              <Button layoutY="125.0" mnemonicParsing="false" onAction="#buttonAsignarMateria" prefHeight="25.0" prefWidth="201.0" text="Asignar Materia" />
                            </children>
                         </AnchorPane>
                   </content>
                 </TitledPane>
-                <TitledPane animated="false" text="untitled 2">
+                <TitledPane prefWidth="202.0" text="NOTAS">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Ingresar Notas" />
+                           </children></AnchorPane>
                   </content>
                 </TitledPane>
-                <TitledPane animated="false" text="untitled 3">
+                <TitledPane text="REPORTES">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Imprimir Listado Alumnos" />
+                              <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Imprimir Cuadros Unidad" />
+                              <Button layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Imprimir Boletas" />
+                           </children></AnchorPane>
                   </content>
                 </TitledPane>
               </panes>
